@@ -1,0 +1,225 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>AiPalette</title>
+		<link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1987/1987925.png">
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<section style="background-color: #ff5050; padding-top:10px">
+			<center>
+				<a href="./index.html"><button><h3>Home</h3></button></a>			
+				<a href="./gallery.html"><button><h3>Collection</h3></button></a>
+				<a href="./record.html"><button><h3>Record</h3></button></a>
+
+				<style>
+					button{
+						 border: none;
+						 outline: none;
+						 text-decoration: none;
+						 padding: 20px;
+						 margin-bottom: 20px;
+						}
+
+				</style>				
+		
+		</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Intro -->
+
+		
+
+					<section>
+						<header>
+							<br><h2 style="font-size: 50px;"><center>Record</h2>
+							<style type="text/css">
+        h3 span {
+            font-size: 22px;
+        }
+        
+        .mt32 {
+            margin-top: px;
+        }
+    </style>
+</head>
+<div>
+<body class="mt32">
+    <div class="container">
+        <h3>
+            <input type="search" placeholder="Search..." class="form-control search-input" data-table="customers-list"/>
+        </h3>
+        <table class="table table-striped mt32 customers-list"  style="text-align: center; color:white;">
+            <thead>
+                <tr>
+                    <th style="text-align: center; color:white;">Artwork</th>
+                    <th style="text-align: center; color:white;">Name</th>
+                    <th style="text-align: center; color:white;">ID</th>
+                </tr>
+            </thead>
+            <tbody>
+    
+                <tr>
+                    <td><a href="./gallery.html" target="_blank" style="color:white;">Dope</a></td>
+                    <td>Sankalp Shrivastava</td>
+                    <td>#8583</td>
+
+                </tr>
+               
+ 
+                <tr>
+                    <td><a href="./gallery.html" target="_blank" style="color:white;">Dragon</a></td>
+                    <td>Rishabh Gupta</td>
+                    <td>#3936</td>
+           
+                </tr>
+                <tr>
+                    <td><a href="./gallery.html" target="_blank" style="color:white;">Griffin</a></td>
+                    <td>Nimisha Shrivastava</td>
+                    <td>#3828</td>
+            
+                </tr>
+                <tr>
+                    <td><a href="./gallery.html" target="_blank" style="color:white;">Yeti</a></td>
+                    <td>Gaurav Gautam</td>
+                    <td>#6757</td>
+           
+                </tr>
+                <tr>
+                    <td><a href="./gallery2.html" target="_blank" style="color:white;">Lion</a></td>
+                    <td>Ankur Kulshreshtha</td>
+                    <td>#6445</td>
+                  
+                </tr>
+                <tr>
+                    <td><a href="./gallery2.html" target="_blank" style="color:white;">Cosmo</a></td>
+                    <td>Rohit Shrivastava</td>
+                    <td>#2345</td>
+             
+                </tr>
+                <tr>
+                    <td><a href="./gallery2.html" target="_blank" style="color:white;">Werewolf</a></td>
+                    <td>KryptoKnight</td>
+                    <td>#2663</td>
+                   
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        (function(document) {
+            'use strict';
+
+            var TableFilter = (function(myArray) {
+                var search_input;
+
+                function _onInputSearch(e) {
+                    search_input = e.target;
+                    var tables = document.getElementsByClassName(search_input.getAttribute('data-table'));
+                    myArray.forEach.call(tables, function(table) {
+                        myArray.forEach.call(table.tBodies, function(tbody) {
+                            myArray.forEach.call(tbody.rows, function(row) {
+                                var text_content = row.textContent.toLowerCase();
+                                var search_val = search_input.value.toLowerCase();
+                                row.style.display = text_content.indexOf(search_val) > -1 ? '' : 'none';
+                            });
+                        });
+                    });
+                }
+
+                return {
+                    init: function() {
+                        var inputs = document.getElementsByClassName('search-input');
+                        myArray.forEach.call(inputs, function(input) {
+                            input.oninput = _onInputSearch;
+                        });
+                    }
+                };
+            })(Array.prototype);
+
+            document.addEventListener('readystatechange', function() {
+                if (document.readyState === 'complete') {
+                    TableFilter.init();
+                }
+            });
+
+        })(document);
+
+    </script>
+	</body>
+</div>
+							
+						
+						</header>
+						<div class="content" style="padding-top: 10px;"><br><br>
+							<h2><center><strong>CONTACT US</strong></h2>
+							<form id = 'home'>
+								<div class="fields">
+									<div class="field half">
+										<input type="text" name="name" id="name" placeholder="Name">
+									</div>
+									<div class="field half">
+										<input type="email" name="email" id="email" placeholder="Email">
+									</div>
+									<div class="field">
+										<textarea name="prompt" id="prompt" placeholder="Message" rows="5"></textarea>
+										<!--<p style="color: Red; font-size:15px">* Note: Give as much detail as you can to get a more accurate and detailed image.<br>* Note: AiPalette and its technology are not responsible for the resulting image.</p>-->
+
+									</div>
+								</div>
+									<ul class="actions">
+									<li><button type="submit" class="button primary" id="btn">Send Message</button></li>
+								</ul>
+							</form>
+						
+
+							<h2><center>Get in touch</h2>
+
+							<ul class="items">
+								<li>
+									<h2><center>Email</h2>
+									<a href="#"><center><p>aipalettetechnologies@gmail.com</p></a>
+										<style type="text/css">
+											p{
+												font-size: 20px;
+											}
+										</style>
+								</li>
+								
+							</ul>
+							<center>
+							<br><br><h2>Founder and Developer</h2>
+								<ul class="icons">
+									<li><a href="https://sankal.web.app/" target="_blank"><h2>Sankalp Shrivastava</h2></a></li>
+								</ul>
+
+						</div>
+						<br><br><div class="copyright" style="color: black; font-size: 25px; text-align: center">&copy; AiPalette Technologies. <br>All rights reserved.</div>
+					
+
+					</section>
+
+				<!-- Copyright -->
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+			<script src="assets/js/firebase.js"></script>
+				<script src="assets/js/jquery.min.js"></script>
+				<script src="assets/js/jquery.scrolly.min.js"></script>
+				<script src="assets/js/browser.min.js"></script>
+				<script src="assets/js/breakpoints.min.js"></script>
+				<script src="assets/js/util.js"></script>
+				<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
