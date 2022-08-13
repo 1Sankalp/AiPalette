@@ -1,14 +1,14 @@
 // Initialize Firebase
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 var firebaseConfig = {
-  apiKey: "AIzaSyC9Equ9RIIl7jdyKeuZIh08JwvcJ2sRSPw",
+  apiKey: "",
   authDomain: "aipalette.firebaseapp.com",
   databaseURL: "https://aipalette-default-rtdb.firebaseio.com",
   projectId: "aipalette",
   storageBucket: "aipalette.appspot.com",
-  messagingSenderId: "126676877027",
-  appId: "1:126676877027:web:4ddc344cebe0d8768e8fd6",
-  measurementId: "G-97TQTD7M4D"
+  messagingSenderId: "",
+  appId: "",
+  measurementId: ""
 };
 
 firebase.initializeApp(firebaseConfig);
